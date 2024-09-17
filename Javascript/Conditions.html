@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            Condition:
+            1. if
+            2. if ... else
+            3. if...else if...else
+            4. nested
+            5. switch..case
+        */
+
+        // const mark = Number(prompt("Enter the mark :"));
+
+        /* if */
+        // if(mark>=0 && mark<=100){
+        //     alert("Valid mark")
+        // }
+
+        /* if Else */
+        // if(mark>=0 && mark<=100){
+        //     alert("Valid mark")
+        // }
+        // else{
+        //     alert("Invalid Mark..!")
+        // }
+
+        /* nested */
+        // if(mark>=0 && mark<=100){
+        //     alert("Valid mark");
+
+        //     if(mark>=40){
+        //         alert("pass")
+        //     }
+        //     else{
+        //         alert("Fail")
+        //     }
+        // }
+        // else{
+        //     alert("Invalid Mark..!")
+        // }
+
+        /* If..else if..else */
+        /* if(mark>=0 && mark<=100){
+            alert("Valid mark");
+
+            if(mark>=40){
+                alert("pass");
+
+                if(mark>=85){
+                    console.log("Outstanding");
+                }
+                else if(mark>=70 && mark<85){
+                    console.log("First Class");
+                }
+                else if(mark>=55 && mark<70){
+                    console.log("Second Class");
+                }
+                else{
+                    console.log("Third Class");
+                }
+            }
+            else{
+                alert("Fail")
+            }
+        }
+        else{
+            alert("Invalid Mark..!")
+        } */
+
+        const a = Number(prompt("Enter A"));
+        const b = Number(prompt("Enter B"));
+        const opt = Number(prompt("Enter option:\n1.Add \n2.Sub \n3.Multiply \n4. Divide"));
+
+        switch(opt){
+            case 1:
+                alert("Result : " + (a+b));
+                
+                break;
+            case 2:
+                alert("Result : " + (a-b));
+                break;
+            case 3:
+                alert("Result : " + (a*b));
+                break;
+            case 4:
+                alert("Result : " + (a/b));
+                break;
+            default:
+                alert("Invalid Option")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @media screen and (max-width:600px) {
+     .img{
+        height: 300px;
+        width: 300px;
+        
+         }
+         *{
+            height: 200px;
+            width: 200px;
+         }
+         
+        .img1{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            /* transform: scalez(5); */
+            /* transform:scaleY(3) ; */
+            border-radius: 30px;
+            transform: translateX(300px);
+            transition: all 8s;
+        }
+
+        .img2{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="img">
+       <img class="img1" height="300px" width="300px" src="https://image.shutterstock.com/image-vector/dotted-spiral-vortex-royaltyfree-images-600w-2227567913.jpg">
+    
+    
+        <img class="img2" height="300px" width="300px" src="https://cdn.pixabay.com/photo/2023/11/09/19/36/zoo-8378189_640.jpg">
+    </div>
+
+</body>
+</html>

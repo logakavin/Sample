@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: goldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            background-color: #fff;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 10px 10px 15px black;
+            padding: 10px;
+
+            /* opacity: 0; */
+
+            transition: all .3s;
+        }
+        /* .card p{
+            position: relative;
+            transform: translateZ(100px);
+        } */
+
+        .card:hover {
+            opacity: 1;
+
+            transform: scalex(1.2);
+            /* transform: rotatez(-180deg); */
+            /* transform: translatex(-100px); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quaerat nihil fugit! Illum numquam veniam
+            similique, unde quia enim ducimus natus sunt voluptas alias laudantium adipisci, iure atque nulla eum.
+        </p>
+    </div>
+    <div class="card">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quaerat nihil fugit! Illum numquam veniam
+            similique, unde quia enim ducimus natus sunt voluptas alias laudantium adipisci, iure atque nulla eum.
+        </p>
+    </div>
+    <div class="card">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quaerat nihil fugit! Illum numquam veniam
+            similique, unde quia enim ducimus natus sunt voluptas alias laudantium adipisci, iure atque nulla eum.
+        </p>
+    </div>
+    
+</body>
+
+</html>

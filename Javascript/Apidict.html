@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.inp{
+    width: 600px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: large;
+    color: black;
+    
+  border: 3px solid black;
+  
+    display: flex;
+   margin-left: 400px;
+}
+.h1{
+color: blueviolet;
+margin-left: 550px;
+margin-top: 100px;
+}
+.content{
+    margin-left: 200px;
+    color: red;
+}
+.info text{
+    margin-left: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Api Dictionery</h1>
+        <div class="search">
+            <input placeholder="Search Or type URL" class="inp" type="text" required spellcheck="false">
+            <i class="fas fa-search"></i>
+          
+        </div>
+        <div class="content">
+        <p class="info-text"></p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p></p>
+                    <span></span>
+                </div>
+                <i class="fas fa-volume-up"></i>
+            </li>
+            <div class="content">
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning :</p>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="synonyms">
+                    <div class="details">
+                        <p>Synonyms :</p>
+                        <span class="list"></span>
+                    </div>
+                </li>
+                <li class="source">
+                    <div class="details">
+                        <p>Source :</p>
+                        <span></span>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+    
+    <script>
+    const containerEl = document.querySelector(".container");
+    const searchInputEl = containerEl.querySelector("input");
+    const volumeEl = containerEl.querySelector(".word i");
+    const infoTextEl = containerEl.querySelector(".info-text");
+    const synonymsEl = containerEl.querySelector(".synonyms .list");
+    const removeIcon = containerEl.querySelector(".search span");
+
+    
+    searchInputEl.addEventListener("keyup", e => {
+        let word = e.target.value;
+        if (e.key == "Enter" && word) {
+            fetchApi(word);
+        }
+    });
+    
+    function fetchApi(word) {
+        containerEl.classList.remove("active");
+        infoTextEl.style.color = "black";
+        infoTextEl.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
+        let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    
+        try {
+            fetch(url).then(response => response.json()).then(data => {
+    
+                if (data.title) {
+                    infoTextEl.innerHTML = `Unable to find the meaning of the word <span>"${word}"</span>. Please, Search for another word.`;
+                } else {
+                    containerEl.classList.add("active");
+                    let definitions = data[0].meanings[0].definitions[0],
+                        phonetics = `${data[0].meanings[0].partOfSpeech}  /${data[0].phonetics[0].text}/`;
+                    document.querySelector(".word p").innerText = `Word : ${data[0].word}`;
+                    document.querySelector(".word span").innerText = phonetics;
+                    document.querySelector(".meaning span").innerText = definitions.definition;
+                    document.querySelector(".source span").innerHTML = `<a href="${data[0].sourceUrls[0]}" target="_blank">${data[0].sourceUrls[0]}</a>`;
+                    
+                    if (data[0].meanings[0].synonyms[0] === undefined) {
+                        synonymsEl.innerHTML = "NA";
+                    } else {
+                        synonymsEl.innerHTML = "";
+                        for (let i = 0; i < 5; i++) {
+                            let tag = `<span>${data[0].meanings[0].synonyms[i]},</span>`;
+                            synonymsEl.insertAdjacentHTML("beforeend", tag);
+                        }
+                    }
+                }
+            })
+        } catch {
+            infoTextEl.innerHTML = `Unable to find the meaning of the word <span>"${word}"</span>. Please, Search for another word.`;
+        }
+    }
+    
+        </script>
+</body>
+</html>

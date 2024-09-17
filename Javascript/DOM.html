@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio.</h1>
+    <p class="demo">Hello World..!</h1>
+    <p class="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sapiente ea, animi quasi
+        adipisci ad. Voluptatibus, fugit molestias ducimus nobis ab magni et ratione necessitatibus tempora cumque
+        inventore distinctio reiciendis.</p>
+    <ul class="demo">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+
+
+    <h1 id="root">
+
+    </h1>
+</body>
+    <script>
+        /* 
+            get element method:
+
+            1. getElementById
+            2. getElementsByClassName
+            3. getElementsByTagName
+            4. getElementsByName
+            5. querySelector
+            6. querySelectorAll
+        */
+
+        // const classElements = document.getElementsByClassName('demo');
+        // const tagElement = document.getElementsByTagName('p');
+        // const idElement = document.getElementById("root");
+
+        // idElement.innerHTML = classElements[1].innerHTML
+        // idElement.innerHTML = tagElement[0].innerHTML
+
+        const qSelector = document.querySelectorAll(".demo");
+        const idQuSelector = document.querySelector("#root");
+        idQuSelector.innerHTML = qSelector[2].innerHTML;
+        
+        for(let i=0;i<qSelector.length;i++){
+            qSelector[i].style.background = "Red";
+        }
+idQuSelector.style.background="green"
+       
+</script>
+</html>

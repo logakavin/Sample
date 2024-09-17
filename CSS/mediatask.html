@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .navi{
+            display:block;
+            justify-content: space-between;
+            background-color: rgb(232, 185, 193);
+    
+        }
+        .navi .nav ul li{
+            /* width: 700px; */
+            display: inline-block;
+            /* justify-content: space-evenly; */
+            list-style: none;
+            padding: 8px 10px;
+        }
+        .navi .search ul{
+            list-style: none;
+            display: inline-block;
+            justify-content: space-around;
+        }
+        .navi .search ul li .inp{
+            border: 2px solid black;
+            height: 20px;
+            width: 120px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        .navi .nav ul li:hover{
+            background-color: orange;
+            padding: 5px 10px;
+        }
+        @media screen and (max-width:550px) {
+        .nav{
+            background-color: green;
+        }
+        *{
+            background-color: rgb(255, 64, 0);
+        }
+        .navi .nav ul li{
+            display: block;
+        }
+        
+    }
+    </style>
+    <body>
+        <div class="navi">
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Products </li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Customers</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="search">
+                <ul>
+                    <li><input type="text" class="inp"></li>
+                    <li>Search</li>
+                </ul>
+            </div>
+           
+        </div>
+</body>
+</html>

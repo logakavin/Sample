@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = "Hello World..! , Hello ReactJS...!";
+        console.log(str);
+
+         /* String methods */
+
+        //  length
+        console.log(str.length);
+
+        // slice, substring , substr
+        console.log(str.slice(-20,-10));
+        console.log(str.substring(5,20));
+        console.log(str.substr(10,5));
+        // uppercase , lowercase
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // replace
+        console.log(str.replace(/hello/i,"Hai"));
+        console.log(str.replaceAll("Hello","Hai"));
+
+        // repeat
+        console.log(str.repeat(3));
+
+        // concate
+        console.log(str.concat("Demo string methods"));
+
+        // trim
+        const str1 = "      "+str+'             '
+        console.log(str1);
+        console.log(str1.trim());
+        console.log(str1.trimLeft());
+        console.log(str1.trimRight());
+
+        // pad
+        console.log(str.padStart(40,"34445kl"));
+        console.log(str.padEnd(40,"34445kl"));
+
+        //charat
+        console.log(str[24]);
+        console.log(str.charAt(10));
+        console.log(str.charCodeAt(10));
+    </script>
+</body>
+</html>

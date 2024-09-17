@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="">Name</label>
+        <input type="text" name="" id="sname">
+
+        <br><br>
+
+        <label for="">Email</label>
+        <input type="email" name="" id="smail">
+
+        <br><br>
+
+        <label for="">Phone</label>
+        <input type="number" name="" id="sphone">
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+
+    <script>
+        const sname = document.getElementById("sname");
+        const smail = document.getElementById("smail");
+        const sphone = document.getElementById("sphone");
+
+        async function handleSubmit(e) {
+            
+            e.preventDefault();
+            const id = localStorage.getItem("ids")
+            const data = {
+                Name: sname.value,
+                Email: smail.value,
+                Phone: sphone.value
+            }
+
+            try {
+                await fetch('https://66c57672134eb8f434946316.mockapi.io/api/'+id, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(()=>{
+                    alert("Data Created");
+                    window.location = "Api.html";
+                    localStorage.clear();
+                    // window.history.back();
+                })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        document.getElementById("form").addEventListener("submit",handleSubmit);
+        
+
+        async function handleGetData(){
+
+            const id = localStorage.getItem("ids")
+
+            const fetchedData = await fetch("https://66c57672134eb8f434946316.mockapi.io/api/"+id)
+                                .then((res)=>{return res.json()});
+
+                    sname.value = fetchedData.Name
+                    smail.value = fetchedData.Email
+                    sphone.value = fetchedData.Phone
+
+        }
+
+        window.addEventListener("load",handleGetData);
+    </script>
+
+</body>
+</html>

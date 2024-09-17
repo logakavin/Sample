@@ -1,0 +1,616 @@
+* {
+    margin-top:0;
+    padding: 0%;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 3;   
+}
+
+.navi {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-style: solid black;
+    background-color: whitesmoke;
+    
+    position: relative;
+
+}
+
+.navi .navi1 ol li {
+    display: inline-block;
+    padding: 20px 10px;
+    justify-content: space-between;
+    
+}
+
+.navi .inp {
+    display: inline-block;
+    padding: 6px 10px;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.navi .inpa ol li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.navi1 ol li:hover {
+    background-color: rgb(45, 173, 45);
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.inpa ol li:hover {
+    background-color: rgb(166, 162, 154);
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.navi2 {
+    top: 60px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    border-style: solid black;
+    background-color: black;
+    position:fixed;
+    
+}
+
+.navi2 ol li {
+    display: inline-block;
+    padding: 20px 10px;
+    justify-content: space-evenly;
+    color: white;
+    }
+
+.navi2 ol li:hover {
+    background-color: red;
+    border-radius: 10px;
+    opacity: 1;
+    
+}
+
+.navi3 {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    border-style: solid black;
+    background-color: silver;
+    top: 19%;
+    overflow-y: scroll;
+    
+}
+
+.navi3 li {
+    list-style: none;
+    padding: 10px 30px;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSsMyCIO2Cs4TzfgQ5L1yhiOAjtGHNa81kg&s'); */
+    background-repeat: no-repeat;
+    background-position: left center;
+    /* background-size: 20px; */
+    cursor: auto;
+    
+}
+
+.navi3 li:hover {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    opacity: 1;
+    
+}
+
+.ad {
+    top:20%;
+    height: 100px;
+    width: 600px;
+    margin-left: 150px;
+    border-radius: 10px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg);
+    position:relative;
+    padding-top: 20px;
+}
+
+.centre {
+    top: 0%;
+    position:relative; 
+    height: 500px;
+    width: 900px;
+    margin-left: 210px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn1 {
+    font-size: 30px;
+    background-color: rgb(57, 144, 57);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.btn1:hover,
+.btn1:focus {
+    opacity: 1;
+    background-color: silver;
+}
+.para1 {
+    height: 150px;
+    width: 850px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: aliceblue;
+    justify-content: center;
+    padding-top: 80px;
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+.btnp {
+    font-size: 25px;
+    background-color: rgb(60, 153, 60);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;
+}
+
+.btnp:hover {
+    opacity: 1;
+    background-color: silver;
+}
+
+.easy {
+    font-weight: .2px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.easy p {
+    margin-top: 10px;
+}
+
+.ex {
+    height: 200px;
+    width: 850px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.ex .btnex {
+    font-size: 25px;
+    background-color: rgb(46, 128, 46);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 90px;
+}
+
+.btnp:hover {
+    opacity: 1;
+    background-color: rgb(225, 201, 201);
+}
+
+.click {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.html {
+    height: 300px;
+    width: 850px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+
+.html h1 {
+    padding-top: 40px;
+
+}
+
+.html p {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.btnh {
+    font-size: 25px;
+    /* background-color:silver; */
+    color: black;
+    background-color: rgb(181, 209, 233);
+    border-radius: 5px;
+    border: none;
+    margin-top: 90px;
+}
+
+.btnh:hover {
+    opacity: 1;
+    background-color: rgb(28, 117, 28);
+}
+
+.he {
+    margin-top: 30px;
+}
+
+.he p {
+    margin-top: 20px;
+}
+
+.test {
+    height: 400px;
+    width: 900px;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.test h1 {
+    padding-top: 40px;
+    padding: 10px;
+}
+
+.test h1 {
+    color: white;
+    margin-top: 40px;
+
+}
+
+.test1 {
+    height: 280px;
+    width: 800px;
+    background-color: white;
+    margin: 40px;
+
+}
+
+.test .test1 h2 {
+    color: black;
+    margin: 20px;
+    padding-top: 20px;
+
+}
+
+.test .test1 h4 {
+    color: black;
+    margin: 20px;
+}
+
+.test .test1 p {
+    height: 50px;
+    width: 600px;
+    background-color: silver;
+    color: black;
+    margin: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.btnt {
+    font-size: 25px;
+    /* background-color:silver; */
+    color: black;
+    background-color: rgb(35, 130, 44);
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+}
+
+.btnt:hover {
+    opacity: 1;
+    background-color: rgb(180, 193, 180);
+}
+
+.test .test1 h5 {
+    color: black;
+    margin-left: 18px;
+    margin-top: 8px;
+    font-size: large;
+}
+
+.qui h1 {
+    margin-top: 30px;
+}
+
+.qui p {
+    margin-top: 30px;
+}
+
+.btnq {
+    margin-top: 30px;
+    font-size: 25px;
+    /* background-color:silver; */
+    color: white;
+    background-color: rgb(35, 38, 212);
+    border-radius: 4px;
+    border: none;
+    margin-left: 20px;
+}
+
+.btnq:hover {
+    opacity: 1;
+    background-color: rgb(180, 193, 180);
+}
+
+.learn {
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.learn p {
+    margin: 20px;
+    line-height: 30px;
+}
+
+.hai {
+    margin: 5px;
+    height: 250px;
+    width: 900px;
+    border-radius: 10px;
+    border: 2px black;
+    background-color: beige;
+    position: relative;
+}
+
+.hai H1 {
+    padding: 20PX;
+}
+
+.hai p {
+    padding: 30px;
+}
+
+.btnhi {
+    margin-top: 20px;
+    font-size: 25px;
+    /* background-color:silver; */
+    color: white;
+    background-color: rgb(15, 15, 18);
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+.btnhi:hover {
+    opacity: 1;
+    background-color: rgb(180, 193, 180);
+}
+
+.hai .good {
+    height: 100px;
+    width: 50px;
+    background-color: aqua;
+    position: relative;
+    border: 2px solid black;
+    margin-left: 700px;
+    /* margin-bottom: 50px; */
+    transform: scaley(9);
+    transform: scalez(9);
+    font-size: 5px;
+}
+
+.ref {
+    margin-top: 40px;
+}
+
+.ref p {
+    padding: 20px;
+    line-height: 30px;
+}
+.gr p:hover{
+    opacity: 1;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.gr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gr p {
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right: auto;
+    line-height: 50px;
+}
+
+.kick {
+    height: 200px;
+    width: 850px;
+    border-radius: 10px;
+    background-color: rgb(55, 43, 43);
+    color: rgb(216, 62, 216);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.kick p {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.btnk {
+    margin-top: 20px;
+    font-size: 30px;
+    /* background-color:silver; */
+    color: white;
+    background-color: rgb(28, 79, 30);
+    border-radius: 20px;
+    border: none;
+    margin-left: 20px;
+}
+
+.btnk:hover {
+    opacity: 1;
+    background-color: rgb(180, 193, 180);
+}
+
+.w3schools {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid green;
+    margin-left: 500px;
+}
+
+.w3schools h2 {
+    color: whitesmoke;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.vid {
+    color: black;
+    margin-top: 140px;
+    margin-left: 200px;
+}
+
+.btnl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btnl1 {
+    font-size: 30px;
+    background-color: rgb(40, 122, 40);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnl2 {
+    font-size: 30px;
+    background-color: rgb(32, 101, 32);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnl1:hover {
+    opacity: 1;
+    background-color: silver;
+}
+
+.btnl2:hover {
+    opacity: 1;
+    background-color: silver;
+}
+
+.ad2 {
+    height: 100px;
+    width: 100%;
+    margin-left: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg);
+
+    position: relative;
+}
+
+.box {
+    height: 500px;
+    width: 1130px;
+    background-color: black;
+    color: wheat;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+}
+
+.box p {
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+.box p:hover{
+    opacity: 1;
+    background-color:white ;
+    border-radius: 50px;
+    color: red;
+}
+
+.ad3{
+    margin-top: 0%;
+    height: 600px;
+    width: 200px;
+    background-image: url(https://img.freepik.com/free-photo/landscape-scenery-with-magenta-nature_23-2150693785.jpg);
+    margin-left: 1120px;
+    /* padding-top: 100px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.ad4{
+    margin-top: 30px;
+    height: 600px;
+    width: 200px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxbs1p1cOZ0AzZwBtDU3pLH3Rhc8vMQv7qVc9ERmNGbNQeKoYxRMs5J3i18vCEVn3LWA&usqp=CAU);
+    margin-left: 1120px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    border-radius: 10px;
+}
+.ad5{
+    margin-top: 30px;
+    height: 600px;
+    width: 200px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWe7E7-Feb7KKZv7oD7nSBAwSEO10EWRfa4LjH8HGU9FTlVGL3fz7hcSWdeObb-Gs-tFg&usqp=CAU);
+    margin-left: 1130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.ad6{
+    margin-top: 30px;
+    height: 600px;
+    width: 200px;
+    background-image: url(https://c8.alamy.com/compfr/eyw542/la-tour-eiffel-illuminee-la-nuit-eyw542.jpg);
+    margin-left: 1130px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.ad7{
+    margin-top: 30px;
+    height: 600px;
+    width: 200px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDLmiWbQT0RFUj1jGgU6VMw2CfgDPB3xTDYLw6u6TD6KUtmliCjeB1bY6t_-P1sHFhVa8&usqp=CAU);
+    margin-left: 1140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const phase = prompt("Enter the Service Number");
+        const unit = Number(prompt("Enter the unit"));
+        if (phase.length > 0 && phase.length < 7) {
+            alert("Single Phase");
+            if (unit > 0 && unit <= 100) {
+                alert("No Bill");
+            }
+            else if (unit > 100 && unit < 1000) {
+                alert("3 Rs per unit");
+                const Bill = unit * 3;
+                alert("bill=" + Bill);
+            }
+        }
+
+        else {
+            alert("Three Phase");
+            if(unit>=0 && unit<=300){
+                alert("7 Rs per unit");
+                const Bill = unit * 3;
+                alert("bill=" + Bill);
+            }
+            else if (unit > 300 && unit < 1000) {
+                alert("7 Rs per unit");
+                const Bill = unit * 7;
+                alert("bill=" + Bill);
+            }
+            else if (unit > 1000 && unit < 10000) {
+                alert("10 Rs per unit");
+                const Bill = unit * 10;
+                alert("bill=" + Bill);
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

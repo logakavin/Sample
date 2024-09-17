@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // constructor
+        class Student{
+            constructor(name,email,phone){
+                this.Sname = name;
+                this.Semail = email;
+                this.Sphone = phone;
+            }
+
+
+            //method
+            display(){
+                console.log("This is Student Class display method");
+                const stuName = "Hari"
+                return stuName;
+            }
+            
+            
+            // Argument
+            display2(name,email,product){
+                console.log(`Name : ${name}`);
+                console.log(`Email : ${email}`);
+                console.log(`Product : ${product}`);
+            }
+            
+
+
+            // constructor
+            displayConstruct(){
+                console.log(`Name  : ${this.Sname}`);
+                console.log(`Email : ${this.Semail}`);
+                console.log(`Phone : ${this.Sphone}`);    
+            }
+        }
+
+        
+        // Inheritance
+        class Mark extends Student{
+            constructor(name,email,phone,m1,m2){
+                super(name,email,phone);
+                this.mark1 = m1;
+                this.mark2 = m2;
+            }
+
+            dispMark(){
+                this.displayConstruct();
+
+                console.log("Mark 1 : "+this.mark1);
+                console.log("Mark 2 : "+this.mark2);
+                
+            }
+        }
+
+        
+
+        const stu = new Student("Akil","akil@mail.com",123456782);
+
+        console.log(stu.display());
+
+        // stu.display2("Kavin","logakavin@mail.com","IQOO Mobile")
+
+        // stu.displayConstruct();
+
+        // const result = new Mark("Akil","akil@mail.com",123456782,85,92);
+        // result.dispMark()
+
+        </script>
+</body>
+</html>

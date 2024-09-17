@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body class="container">
+    <form class="row was-validated">
+        <div class="col-md-6">
+            <label for="inputemail " class="form-label">E mail</label>
+            <input type="email" name="" id="inputemail" class="form-control" required>
+
+            <div class="valid-feedback">
+                Looks good
+            </div>
+            <div class="invalid-feedback">
+                Fill this field
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="inputpass" class="form-label">Password</label>
+            <input type="password" name="" id="inputpass" class="form-control" required>
+            <div class="valid-feedback">
+                Looks good
+            </div>
+            <div class="invalid-feedback">
+                Fill this field
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="addr" class="form-label">Address</label>
+            <textarea name="" id="addr" class="form-control" required></textarea>
+        </div>
+        <div class="col-md-6">
+            <label for="file" class="form-label">Resume</label>
+            <input type="file" name="" id="file" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label for="select" class="form-label">Select</label>
+            <select name="" id="select" class="form-select" required>
+                <option value="">Selec 1</option>
+                <option value="">Selec 2</option>
+                <option value="">Selec 3</option>
+                <option value="">Selec 4</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="select" class="form-label">Select</label>
+            <select name="" id="select" class="form-select" size="2" multiple>
+                <option value="">Open Selec 1</option>
+                <option value="">Open Selec 2</option>
+                <option value="">Open Selec 3</option>
+                <option value="">Open Selec 4</option>
+            </select>
+        </div>
+
+        <h5>Check and Radios</h5>
+        <div class="col-12 d-flex gap-4">
+            <div>
+                <div class="form-check">
+                    <input type="checkbox" name="" id="chk1" class="form-check-input" required>
+                    <label for="chk1" class="form-check-label">Check 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="" id="chk2" class="form-check-input" required>
+                    <label for="chk2" class="form-check-label">Check 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="" id="chk3" class="form-check-input" required>
+                    <label for="chk3" class="form-check-label">Check 3</label>
+                </div>
+            </div>
+            <div>
+                <div class="form-check">
+                    <input type="radio" name="rad" id="radio1" class="form-check-input" required>
+                    <label for="radio1" class="form-check-label">Radio 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="rad" id="radio2" class="form-check-input" required>
+                    <label for="radio2" class="form-check-label">Radio 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="rad" id="radio3" class="form-check-input" required>
+                    <label for="radio3" class="form-check-label">Radio 3</label>
+                </div>
+            </div>
+            <div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="" role="switch" id="sw1" class="form-check-input" required>
+                    <label for="sw1" class="form-check-label">Switch 1</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="" role="switch" id="sw2" class="form-check-input" checked>
+                    <label for="sw2" class="form-check-label">Switch 2</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="" role="switch" id="sw3" class="form-check-input" disabled>
+                    <label for="sw3" class="form-check-label">Switch 3</label>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="btnck1" class="btn-check">
+                <label for="btnck1" class="btn btn-outline-primary">Check button1</label>
+                <input type="checkbox" name="" id="btnck2" class="btn-check">
+                <label for="btnck2" class="btn btn-outline-primary">Check button2</label>
+                <input type="checkbox" name="" id="btnck3" class="btn-check">
+                <label for="btnck3" class="btn btn-outline-primary">Check button3</label>
+                <br>
+                <input type="radio" name="btck" id="btnra1" class="btn-check">
+                <label for="btnra1" class="btn btn-outline-primary">Radio button1</label>
+                <input type="radio" name="btck" id="btnra2" class="btn-check">
+                <label for="btnra2" class="btn btn-outline-primary">Radio button2</label>
+                <input type="radio" name="btck" id="btnra3" class="btn-check">
+                <label for="btnra3" class="btn btn-outline-primary">Radio button3</label>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="" id="chk1" class="form-check-input">
+                    <label for="chk1" class="form-check-label">Check 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="" id="chk2" class="form-check-input">
+                    <label for="chk2" class="form-check-label">Check 2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" name="" id="chk3" class="form-check-input">
+                    <label for="chk3" class="form-check-label">Check 3</label>
+                </div>
+            </div>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="rad" id="radio1" class="form-check-input">
+                    <label for="radio1" class="form-check-label">Radio 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="rad" id="radio2" class="form-check-input">
+                    <label for="radio2" class="form-check-label">Radio 2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="rad" id="radio3" class="form-check-input">
+                    <label for="radio3" class="form-check-label">Radio 3</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="input-group">
+                <span class="input-group-text">Name</span>
+                <input type="text" name="" id="" class="form-control" required>
+                <input type="text" name="" id="" class="form-control" required>
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                    </svg>
+                </span>
+                <input type="text" name="" id="" class="form-control" required>
+            </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            
+            <div class="input-group mt-2">
+                <span class="input-group-text">
+                    <input type="checkbox" name="" class="form-check-input" id="">
+                </span>
+                <input type="text" name="" id="" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="form-floating">
+                <input type="text" placeholder="" name="" id="" class="form-control" required>
+                <label for="" class="form-label">Username</label>
+            </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="form-floating">
+                <input type="text" placeholder="" name="" id="" class="form-control" required>
+                <label for="" class="form-label">Password</label>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+</script>
+
+
+</html>

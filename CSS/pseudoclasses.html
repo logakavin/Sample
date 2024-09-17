@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form{
+            border: 1px solid black;
+            height: 150px;
+        }
+        .f label,
+         .inp{
+            margin-bottom: 20px;
+         }
+         button:hover{
+            background-color: blue;
+            color: aqua;
+            font-size: 20px;
+         }
+         .inp:focus{
+            background-color: goldenrod;
+            color:gray;
+         }
+         form:focus-within{
+            background: pink;
+        }
+        .flabel::before{
+            content: "@";
+            background-color: crimson;
+        }
+        form.inp:invalid{
+            background-color: cadetblue;
+            color:violet ;
+        }
+
+    </style>
+     
+</head>
+<body>
+    <form action="">
+        <label for="" class="flabel">Username</label>
+        <br>
+        <input type="text" name="" id="" class="inp" pattern="[a-z* ]+" required>
+    
+        <br>
+        <label for="" class="flabel">Password</label>
+        <br>
+        <input type="password" name="" id="" class="inp" required>
+
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <style>
+        .demo p:first-child{
+         background-color: red;
+         color: aqua;
+        }
+        
+    </style>
+    
+   
+       <div class="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem modi incidunt nobis quaerat voluptatum sit accusantium, mollitia dolorem accusamus repellat ea quos natus commodi eveniet inventore repudiandae error, amet voluptatibus.</p>
+       
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis nihil eaque nam autem? Dolore, tempore, hic incidunt quidem dolorum unde laboriosam eum impedit enim sapiente temporibus voluptas non officia. Error!
+
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aspernatur, ut, impedit voluptatem consequatur atque architecto nostrum totam dicta at alias ipsam vitae suscipit adipisci corporis saepe eius et autem!
+
+        </p>
+        </div>
+
+</body>
+</html>

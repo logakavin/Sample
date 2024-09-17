@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: blue;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eaque, ducimus ipsa adipisci quisquam, commodi aspernatur omnis earum non asperiores veritatis libero, eligendi qui officiis dolores voluptatem corporis distinctio aut.</p>
+   <button onclick="RemoveHandle()">remove</button>
+    <h1 id="h1"></h1>
+
+    <!-- <form id="form">
+        <label for="">Current</label>
+        <textarea name="" id="box1"></textarea>
+        <br><br>
+        <label for="">permanent</label>
+        <textarea name="" id="box2"></textarea>
+        <br><br>
+        <label for="">select</label>
+        <select name="" id="select">
+            <option value="" selected>Select</option>
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+            <option value="value4">Value 4</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form> -->
+    <script>
+
+        const para = document.getElementById('para');
+        para.addEventListener('mouseenter', View)
+
+        function View(){
+            document.getElementById('h1').innerHTML += "hello "+"<br>"
+        }
+
+
+        function RemoveHandle(){
+            para.removeEventListener('mouseenter',View)
+        }
+
+        // const inp1 = document.getElementById("box1");
+        // const inp2 = document.getElementById("box2");
+        // const select = document.getElementById("select");
+        /* Keyboard
+            1. keyup
+            2. keydown
+            3. keypress
+        */
+
+        // inp1.addEventListener("keypress", ()=>{
+        //     document.getElementById('h1').innerHTML = inp1.value 
+        // })
+        // inp1.addEventListener("keydown", ()=>{
+        //     document.getElementById('h1').innerHTML = inp1.value 
+        // })
+        // inp1.addEventListener("keyup", ()=>{
+        //     document.getElementById('h1').innerHTML = inp1.value 
+        // })
+
+        /* Form Events
+            1. Submit
+            2. Reset
+            3. focus
+            4. blur
+            5. change
+        */
+
+        // document.getElementById("form").addEventListener("submit", () => {
+        //     event.preventDefault();
+        //     document.getElementById('h1').innerHTML = `
+        //                                                 <span>${inp1.value}</span><br>
+        //                                                 <span>${inp2.value}</span><br>
+        //                                                 <span>${select.value}</span>
+        //                                                 `
+
+        // })
+
+        // function resetForm() {
+        //     document.getElementById('h1').innerHTML = "";
+        //     alert("Form Reseted");
+        // }
+        // document.getElementById("form").addEventListener("reset", resetForm);
+
+        // inp1.addEventListener("focus",()=>{
+        //     inp1.style.background = "greenyellow"
+        // })
+        // inp2.addEventListener("focus",()=>{
+        //     inp2.style.background = "greenyellow"
+        // })
+        // inp1.addEventListener("blur",()=>{
+        //     inp1.style.background = "transparent";
+        // })
+        // inp2.addEventListener("blur",()=>{
+        //     inp2.style.background = "transparent";
+        // })
+
+        // inp1.addEventListener("change",()=>{
+        //     inp1.value = inp1.value.toUpperCase();
+        // })
+        // inp2.addEventListener("change",()=>{
+        //     inp2.value = inp2.value.toUpperCase();
+        // })
+
+        /* 
+            Clipboard events
+            1. cut
+            2. copy 
+            3. paste
+        */
+
+        // inp1.addEventListener("cut",()=>{
+        //     event.preventDefault()
+        //     alert("Not to be cutted")
+        // })
+        // inp1.addEventListener("copy",()=>{
+        //     event.preventDefault()
+        //     alert("Not to be copy")
+        // })
+        // inp2.addEventListener("paste",()=>{
+        //     event.preventDefault()
+        //     alert("Not to be pasted")
+        // })
+     
+
+    </script>
+
+</body>
+
+</html>

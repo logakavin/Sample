@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   body{
+background-image: url(https://www.kindpng.com/picc/m/344-3440802_transparent-background-clock-clipart-transparent-hd-png-download.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    .main{
+        height: 250px;
+        width: 600px;
+        border: 30px solid rgb(100, 19, 19);
+        border-radius: 80px;
+        margin-top: 240px;
+        margin-left: 330px;
+        background-color: antiquewhite;
+/* background-image: url(https://icon2.cleanpng.com/20180715/ksk/aav1ohw4h.webp); */
+    }
+    .time{
+        font-size: 70px;
+        margin-left: 48px;
+        margin-top: 30px;
+        color: red;
+    }
+    .btn{
+/* font-size: 20px; */
+/* margin-left: 200px; */
+/* border-radius: 50px; */
+margin-top: 50px;
+}
+.btn1{
+    font-size: 40px;
+    margin-left: 100px;
+    border-radius: 20px;
+    background-color: green;
+    color: aliceblue;
+
+}
+.btn2{
+    font-size: 40px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: red;
+    color: aliceblue;
+}
+.btn3{
+    font-size: 40px;
+    margin-left: 50px;
+    border-radius: 20px;
+    background-color: springgreen;
+    color: aliceblue;
+}
+
+.head{
+    margin-left:420px ;
+    font-size: 80px;
+    margin-top: 0;
+    color: darksalmon;
+}
+
+</style>
+
+</head>
+<body>
+    <h1 class="head">STOP WATCH</h1>
+    <div class="main">
+        
+    <div class="time">00:00:00:00</div>
+    <div class="btn">
+    <button class="btn1" id="starttimer">Start</button>
+    <button class="btn2" id="stoptimer">Stop</button>
+    <button class="btn3" id="resettimer">Reset</button>
+    </div>
+</div>
+
+
+    <script>
+let [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
+let timeRef = document.querySelector(".time");
+let int = null;
+
+document.getElementById("starttimer").addEventListener("click", () => {
+    if(int !== null) {
+        clearInterval(int);
+    }
+    int = setInterval(displayTimer, 10);
+});
+
+document.getElementById("stoptimer").addEventListener("click", () => {
+    clearInterval(int);
+});
+
+document.getElementById("resettimer").addEventListener("click", () => {
+    clearInterval(int);
+    [milliseconds, seconds, minutes, hours] = [0, 0, 0, 0];
+    timeRef.innerHTML = "00 : 00 : 00 : 000 ";
+}); 
+
+function displayTimer() {
+    milliseconds += 10;
+    if(milliseconds == 1000) {
+        milliseconds = 0;
+        seconds++;
+        if(seconds == 60) {
+            seconds = 0;
+            minutes++;
+            if(minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+    }
+
+    let h = hours < 10 ? "0" + hours : hours;
+    let m = minutes < 10 ? "0" + minutes : minutes;
+    let s = seconds < 10 ? "0" + seconds : seconds;
+    let ms = 
+        milliseconds < 10
+        ? "00" + milliseconds
+        : milliseconds < 100
+        ? "0" + milliseconds
+        : milliseconds;
+
+    timeRef.innerHTML = `${h} : ${m} : ${s} : ${ms}`;
+
+}
+           </script>
+</body>
+</html>

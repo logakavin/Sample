@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <form id="form">
+        <label for="">label1 </label>
+        <textarea name="" id="box1"></textarea>
+        <label for="">label2 </label>
+        <textarea name="" id="box2"></textarea>
+        <label for="">select</label>
+        <select name="" id="select">
+            <option value="" selected>Select</option>
+            <option value="value1">Value 1</option>
+            <option value="value2">Value 2</option>
+            <option value="value3">Value 3</option>
+            <option value="value4">Value 4</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <script>
+         const inp1 = document.getElementById("box1");
+        const inp2 = document.getElementById("box2");
+        const select = document.getElementById("select");
+        // inp1.addEventListener("keypress", ()=>{
+        //     document.getElementById('h1').innerHTML = inp1.value 
+        // })
+        // inp1.addEventListener("keydown", ()=>{
+        //     document.getElementById('h1').innerHTML = inp1.value 
+        // })
+        // inp1.addEventListener("keyup", ()=>{
+        //     document.getElementById('h1').innerHTML = inp1.value 
+        // });
+        document.getElementById("form").addEventListener("submit", () => {
+            event.preventDefault();
+            document.getElementById('h1').innerHTML = `
+                                                        <span>${inp1.value}</span><br>
+                                                        <span>${inp2.value}</span><br>
+                                                        <span>${select.value}</span>
+                                                        `
+
+        })
+
+        function resetForm() {
+            document.getElementById('h1').innerHTML = "";
+            alert("Form Reseted");
+        }
+        document.getElementById("form").addEventListener("reset", resetForm);
+
+        // inp1.addEventListener("focus",()=>{
+        //     inp1.style.background = "red"
+        // })
+        // inp2.addEventListener("focus",()=>{
+        //     inp2.style.background = "green"
+        // })
+        // inp1.addEventListener("blur",()=>{
+        //     inp1.style.background = "transparent";
+        // })
+        // inp2.addEventListener("blur",()=>{
+        //     inp2.style.background = "transparent";
+        // })
+
+        // inp1.addEventListener("change",()=>{
+        //     inp1.value = inp1.value.toUpperCase();
+        // })
+        // inp2.addEventListener("change",()=>{
+        //     inp2.value = inp2.value.toUpperCase();
+        // })
+        // inp1.addEventListener("cut",()=>{
+        //     event.preventDefault()
+        //     alert("Not to be cutted")
+        // })
+        // inp1.addEventListener("copy",()=>{
+        //     event.preventDefault()
+        //     alert("Not to be copy")
+        // })  
+        // inp2.addEventListener("paste",()=>{
+        //     event.preventDefault()
+        //     alert("Not to be pasted")
+        // })
+
+    // window.addEventListener("load",()=>{
+    //         document.getElementsByTagName("body")[0].style.background = "greenyellow"
+    //     })
+        window.onunload = function () {
+            console.log("Content Loaded");
+            
+        }
+
+        // window.onresize = function(){
+
+        //     document.getElementById("h1").innerHTML = `Height : ${window.innerHeight} Width : ${window.innerWidth}`;
+        // }
+        // window.onscroll = function(e){
+        //     // document.getElementById("h1").innerHTML = `Height : ${window.innerHeight} Width : ${window.innerWidth}`;
+        //     document.getElementById("h1").innerHTML = `${window.scrollY}`;
+        // }
+
+    </script>
+</body>
+</html>

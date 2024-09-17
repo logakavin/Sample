@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="media-player">
+        
+        <audio id="audio-player" src="D:\IDM\Javascript\En-Jannal-Vandha - Shortcut.lnk " controls></audio>
+    
+        
+        <audio id="audio-player" src="D:\IDM\Javascript\Munbe-Vaa-En-Vaa - Shortcut.lnk" controls></audio>
+</div>
+        <div id="controls">
+            <button id="play">Play</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+            <button id="next">next</button>
+            <button id="previous">Previous</button>
+        </div>
+    
+<script>
+    const playlist = [
+        'D:\IDM\Javascript\En-Jannal-Vandha - Shortcut.lnk',
+        'D:\IDM\Javascript\Munbe-Vaa-En-Vaa - Shortcut.lnk'
+    ];
+  let  currentTrack = 0;
+
+const audioPlayer= document.getElementById('audio-player');
+
+const playButton = document.getElementById('play');
+const pauseButton = document.getElementById('pause');
+const stopButton = document.getElementById('stop');
+const nextButton = document.getElementById('next');
+const previousButton = document.getElementById('previous')
+
+function updateAudio(index){
+    audioPlayer.src = playlist[index];
+    audioPlayer.updateAudio();
+    audioPlayer.play();
+}
+
+
+playButton.addEventListener('click', () => {
+    audioPlayer.play();
+});
+
+
+pauseButton.addEventListener('click', () => {
+    audioPlayer.pause();
+});
+
+
+stopButton.addEventListener('click', () => {
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0; // Reset playback to the start
+});
+
+nextButton.addEventListener("click",()=>{
+  currentTrack++;
+  if(currentTrack >= playlist.length)
+  {
+    currentTrack=0;
+  }
+  updateAudio(currentTrack);
+});
+
+  previousButton.addEventListener("click",()=>{
+  currentTrack--;
+  if(currentTrack < playlist.length)
+  {
+    currentTrack=0;
+  }
+  
+
+   updateAudio(currentTrack);
+});
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="root"></h1>
+    <script>
+        const date = new Date();
+        const disp = document.querySelector("#root");
+
+        // disp.innerHTML = date
+        // disp.innerHTML = date.getDate()
+        // disp.innerHTML = date.getDay()
+        // disp.innerHTML = date.getFullYear()
+        // disp.innerHTML = date.toLocaleDateString("default",{month:"short"})
+        // disp.innerHTML = date.getHours()
+        // disp.innerHTML = date.getMinutes()
+        // disp.innerHTML = date.getSeconds()
+        disp.innerHTML = date.getMilliseconds()
+        // disp.innerHTML = date.toLocaleString("default",{hour12:"short"})
+
+        // setTimeout(()=>{
+        //     disp.innerHTML = "worked..!"
+        //     clearInterval(a)
+        // },5000)
+        
+
+    // const a = setInterval(() => {
+    //         const date = new Date();
+    //         disp.innerHTML = date.toLocaleString("default",{hour12:"short"})
+    //     }, 1000)
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        style:
+            1. inline
+            2. internal
+            3. external
+        
+        selector 
+
+        1. element
+        2. class
+        3. id
+        4. universal
+        5. attribute
+        6. grouping
+    -->
+
+    <!-- internal -->
+    <!-- <style>
+        /* element */
+        div{
+            background-color: burlywood;
+            color: brown;
+        }
+
+         /* class */
+        .demo{
+            background-color: blueviolet;
+            color: burlywood;
+        }
+
+        /* id  */
+        #root{
+            background-color: tomato;
+            color: yellow;
+        }
+
+        /* Attribute */
+        div[name="dummy"]{
+            background-color: white;
+            color: green;
+        }
+            /*  universal  */
+          *{
+          background-color: yellow;
+           }
+
+        /* grouping */
+        .demo,#root,{
+            background-color: black;
+            color: red;
+        }
+    </style> -->
+
+    <!--  external -->
+      <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div style="background-color: aquamarine; color: red;">
+        <h1>Inline Style</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto eveniet fugiat! Ex hic quis, id
+            temporibus quo qui cupiditate accusantium. Alias iure laudantium praesentium iste error non! Error,
+            delectus!</p>
+    </div>
+    <!-- Internal and external -->
+    <div>
+        <h1>Element Selector</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto eveniet fugiat! Ex hic quis, id
+            temporibus quo qui cupiditate accusantium. Alias iure laudantium praesentium iste error non! Error,
+            delectus!</p>
+    </div>
+    <div class="demo">
+        <h1>Class Selector</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto eveniet fugiat! Ex hic quis, id
+            temporibus quo qui cupiditate accusantium. Alias iure laudantium praesentium iste error non! Error,
+            delectus!</p>
+    </div>
+    <div id="root">
+        <h1>ID Selector</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto eveniet fugiat! Ex hic quis, id
+            temporibus quo qui cupiditate accusantium. Alias iure laudantium praesentium iste error non! Error,
+            delectus!</p>
+    </div>
+    <div name="dummy">
+        <h1>Attribute Selector</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat architecto eveniet fugiat! Ex hic quis, id
+            temporibus quo qui cupiditate accusantium. Alias iure laudantium praesentium iste error non! Error,
+            delectus!</p>
+    </div>
+</body>
+
+</html>

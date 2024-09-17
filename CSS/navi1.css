@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    /* background-color: goldenrod; */
+}
+
+ol{
+    flex-direction: column;
+    position: fixed;
+    /* top: 0; */
+    /* left:0px;    */
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    column-gap: 80px;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 200px;
+    /* justify-content: center; */
+    align-items: start;
+    margin-left: 0px;
+}
+ol li{
+    /* flex-direction: column; */
+    padding: 20px;
+    font-size: 30px;
+}
+ol li:hover{
+    background-color: red;
+    
+}
+.para{
+    margin-left: 230px;
+    font-size: 25px;    
+}

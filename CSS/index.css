@@ -1,0 +1,34 @@
+/* element */
+div{
+    background-color: burlywood;
+    color: brown;
+}
+
+/* class */
+.demo{
+    background-color: blueviolet;
+    color: burlywood;
+}
+
+/* id  */
+#root{
+    background-color: tomato;
+    color: yellow;
+}
+
+/* Attribute */
+div[name="dummy"]{
+    background-color: plum;
+    color: lightsalmon;
+}
+
+
+/* grouping */
+.demo,#root{
+    background-color: black;
+    color: red;
+}
+  /*  universal  */
+*{
+    background-color: yellow;
+}

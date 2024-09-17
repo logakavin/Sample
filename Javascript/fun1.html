@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Num 1</label>
+    <input type="number" name="" id="num1">
+
+    <label for="">Num 2</label>
+    <input type="number" name="" id="num2">
+    <button onclick="addNumResult()">Calculate</button>
+   
+
+    <h1 id="result">
+        Result <br>
+        <span id="result1"></span><br>
+        <span id="result2"></span><br>
+        <span id="result3"></span><br>
+        <span id="result4"></span><br>
+       
+    </h1>
+
+    <script>
+  const box1 = document.getElementById("num1");
+  const box2 = document.getElementById("num2");
+  
+
+
+  function addNumResult(){
+    let AddValue = Number(box1.value)+Number(box2.value);
+    let subValue = Number(box1.value)-Number(box2.value);
+    let multipleValue = Number(box1.value)*Number(box2.value);
+    let divValue = Number(box1.value)/Number(box2.value);
+    document.getElementById("result").innerHTML = `Result :<br>
+                                                            Addition : ${AddValue}<br>
+                                                            Subtraction : ${subValue} <br>
+                                                            Multiplication: ${multipleValue}<br>
+                                                            Division : ${divValue} <br>
+
+                                                            `;
+ 
+  }
+
+
+
+
+</script>
+</body>
+</html>

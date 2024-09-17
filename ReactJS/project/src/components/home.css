@@ -1,0 +1,23 @@
+h3{
+    color: red;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+.sidebar{
+    position: relative;
+    width: 10%;
+    height: 100%;
+    background: #535252;
+    line-height: 3.5;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}

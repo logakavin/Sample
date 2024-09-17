@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+ const Bike = []
+ console.log(Bike);
+console.log(prompt("values To be entered"));
+
+
+for(let i =0;i<4;i++){
+  const brand = prompt("Enter brand Name");
+  const model = prompt("Enter Model");
+  const CC = prompt("Enter CC");
+  
+  Bike.push({
+    Brand:brand,
+    Model:model,
+    CC:CC
+  })
+}
+
+        for(let j in Bike){
+            console.log(Bike[j].Brand);
+        }
+
+
+  
+console.log(Bike);
+
+  </script>
+</body>
+</html>

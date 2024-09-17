@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="child1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, tempora!</p>
+        <p id="child2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, perferendis consequatur maxime
+            vero molestias velit quam ducimus consequuntur, magni incidunt error natus! Ducimus accusantium maxime harum
+            veniam magni debitis hic?</p>
+    </div>
+
+    <button onclick="createElementFunction()">Create Element</button>
+    <button onclick="removeElement()">Remove Element</button>
+    <button onclick="removeChildElement()">Remove Child Element</button>
+    <button onclick="replaceChildElement()">Replace Child Element</button>
+
+    <script>
+        const parent = document.getElementById("parent");
+        const child1 = document.getElementById("child1");
+        const child2 = document.getElementById("child2");
+
+        /* 
+            1. createElement() *
+            2. createTextNode()*
+            3. append()*
+            4. insertBefore()*
+            5. remove()
+            6. removeChild()
+            7. replaceChild()
+            8. setAttribute()*
+            9. getAttribute()
+        */
+
+        function createElementFunction(){
+            const element = document.createElement("button");
+            const text = document.createTextNode("Go to DOM.html");
+
+            element.append(text);
+            element.setAttribute("onclick","window.location = 'DOM.html' ");
+
+            parent.insertBefore(element,child1);
+        }
+
+        function removeElement(){
+            child1.remove()
+        }
+
+        function removeChildElement(){
+            parent.removeChild(child2)
+        }
+
+        function replaceChildElement(){
+            const element = document.createElement("h1");
+            const text = document.createTextNode("This is replaced with Heading Element");
+
+            element.append(text);
+
+            parent.replaceChild(element,child2);
+        }
+    </script>
+</body>
+
+</html>

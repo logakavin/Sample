@@ -1,0 +1,35 @@
+
+.p1{
+    height: 200px;
+    width: 300px;
+   color: red;
+   border: 1px solid black;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image:url('https://ikall.in/wp-content/uploads/2023/06/51sJmHfw92L._SL1000_.jpg');
+   background-size: cover;
+
+}
+
+.p2{
+    height: 200px;
+    width: 300px;
+   color: red;
+   border: 1px solid black;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image:url('https://i03.appmifile.com/791_item_in/04/07/2024/88e7985074e520283c26a5a96843b27d.jpg?thumb=1&w=500&q=85');
+   background-size: cover;
+
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

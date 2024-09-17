@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="">Name</label>
+        <input type="text" name="" id="sname">
+
+        <br><br>
+
+        <label for="">Email</label>
+        <input type="email" name="" id="smail">
+
+        <br><br>
+
+        <label for="">Phone</label>
+        <input type="number" name="" id="sphone">
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+
+
+    
+    <script>
+        
+        
+        const sname = document.getElementById("sname");
+        const smail = document.getElementById("smail");
+        const sphone = document.getElementById("sphone");
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const data = {
+                Name: sname.value,
+                Email: smail.value,
+                Phone: sphone.value
+            }
+
+            try {
+                await fetch('https://66c57672134eb8f434946316.mockapi.io/api', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(()=>{
+                    alert("Data Created");
+                    window.location.reload();
+                })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        document.getElementById("form").addEventListener("submit",handleSubmit);
+
+        async function handleGetData(){
+            const fetchedData = await fetch("https://66c57672134eb8f434946316.mockapi.io/api")
+                                .then((res)=>{return res.json()});
+
+            const tableData = fetchedData.map((item,index)=>{
+                return(
+                    `
+                        <tr>
+                            <td>${index+1}</td>
+                            <td>${item.Name}</td>
+                            <td>${item.Email}</td>
+                            <td>${item.Phone}</td>
+                            <td>
+                                <button onclick='setUpEdit(${item.id})'>Edit</button>
+                                <button onclick='handleDelete(${item.id})'>Delete</button>
+                            </td>
+                        </tr>
+                    `
+                )
+            })
+
+
+
+            document.getElementById("display").innerHTML += tableData.join("");
+        }
+
+        window.addEventListener("load",handleGetData);
+
+        function setUpEdit(id){
+            localStorage.setItem("ids",id);
+            window.location = 'ApiEdit.html';
+        }
+
+     async   function  handleDelete (id){ 
+            await fetch('https://66c57672134eb8f434946316.mockapi.io/api/'+id , {
+                method: 'DELETE'
+            })
+            .then(()=>{
+                    alert("Deleted");
+                    window.location.reload();
+                })
+
+            
+    }
+
+ 
+
+        </script>
+
+</body>
+</html>

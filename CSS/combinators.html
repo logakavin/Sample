@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* decantselector  - space */
+         div p{
+            background-color: blue;
+        } 
+        
+         /* child selector  - > */
+          div>p{
+            background-color: aqua;
+         } 
+
+           /* adjusent sibling selector  - + */
+           div + p{
+            background-color: aqua;
+         }
+
+               /* general sibling selector  - ~ */
+               div ~ p{
+            background-color: rgb(255, 251, 0);
+         }
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>child one</p>
+        <p>child two</p>
+        <p>child three</p>
+        <section>
+            <p>grand child</p>
+            <p>grand child</p>
+        </section>
+    </div>
+    <p>siblings</p>
+    <p>siblings</p>
+    <p>siblings</p>
+    
+</body>
+</html>

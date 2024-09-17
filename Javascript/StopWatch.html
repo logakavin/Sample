@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="time">
+      <h1> 00:00:00:00 </h1>
+    </div>
+    
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+
+<script>
+let seconds = 0;
+let interval = null;
+
+function updateTime() {
+    
+    seconds++;
+    const hrs = Math.floor(seconds / 3600000);
+    const mins = Math.floor((seconds / 3600000) / 60);
+    const secs = ((seconds / .6));
+    // const millis = milliseconds % 1000;
+
+
+
+    // const secs = math.floor((seconds / 3600)/ 60);
+    // const Milli = Milli / 60;
+
+    document.getElementById('time').innerText = 
+        (hrs < 10 ? "0" + hrs : hrs) + ":" +
+        (mins < 10 ? "0" + mins : mins) + ":" +
+        (secs < 10 ? "0" + secs : secs);
+        // (millis  < 100 ?  (millis < 10?"00" + millis : "0" +millis));
+}
+
+function startTimer() {
+    if (!interval) {
+        interval =  setInterval(updateTime,1000);
+    }
+}
+
+function stopTimer() {
+    clearInterval(interval);
+    interval = null;
+}
+
+function resetTimer() {
+    stopTimer();
+    seconds = 0;
+    document.getElementById('time') .innerText="00:00:00:00";
+}
+
+</script>
+</body>
+</html>

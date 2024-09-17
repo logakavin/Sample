@@ -1,0 +1,22 @@
+[
+    {
+        "Name": "Kavin",
+        "Course": "MERN",
+        "Batch": "Morning"
+    },
+    {
+        "Name": "Akil",
+        "Course": "MERN",
+        "Batch": "Morning"
+    },
+    {
+        "Name": "Kishore",
+        "Course": "Java",
+        "Batch": "Afternoon"
+    },
+    {
+        "Name": "Karthick",
+        "Course": "Python",
+        "Batch": "Afternoon"
+    }
+]

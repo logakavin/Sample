@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = main> 
+        <p id="para1">1 Lorem ipsum dolor sit amet, consectetur  quas itaque deserunt eum veritatis, ullam fugiat quasi?</p>
+        <p id="para2">2 Lorem ipsum dolor sit amet consectetur, adipisici culpa perspiciatis? Animi, reiciendis dicta.</p>
+    </div>
+    
+    <button onclick="createElementFunction()">Create button</button>
+    <button onclick="removeElement()">Remove button</button>
+    <button onclick="removeChildElement()">Remove Child button</button>
+    <button onclick="replaceChildElement()">Replace Child button</button>
+
+<script>
+    const main = document.getElementById("main");
+    const para1 = document.getElementById("para1");
+    const para2 = document.getElementById("para2");
+
+function createElementFunction(){
+    const element = document.createElement("button");
+            const text = document.createTextNode("Go to data1.html");
+
+            element.append(text);
+            element.setAttribute("onclick","window.location = 'data1.html' ");
+
+            main.insertBefore(element,para1);
+        }
+        function removeElement(){
+            para1.remove()
+        }
+        function removeChildElement(){
+            main.removeChild(para2)
+        }
+
+        function replaceChildElement(){
+            const element = document.createElement("h4");
+            const text = document.createTextNode("Replace The Para");
+
+            element.append(text);
+
+            main.replaceChild(element,para2);
+        }
+
+
+
+
+</script>
+
+</body>
+</html>

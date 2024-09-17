@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+const phase =prompt("Enter the Service Number");
+const unit =Number(prompt("Enter The Unit"));
+
+if ( phase.length >0 && phase.length <7){
+   
+if(unit >0 && unit < 100){
+        alert (" You Have No Bill")
+    }
+    else if(unit >= 101 && unit < 200){
+        alert("3 Rs per unit");
+                const Bill = unit * 3;
+                alert("bill=" + Bill);
+    }
+    else if(unit >= 201 && unit < 300){
+        alert("7 Rs per unit");
+                const Bill = unit * 7;
+                alert("bill=" + Bill);
+    }
+}
+    else if (phase.length > 7 && phase.length <100){ 
+    alert(" Please enter Correct Service Number")
+    }
+
+
+    </script>
+</body>
+
+</html>

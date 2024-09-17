@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .animi{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: cyan;
+
+            /* animation-name: animi1; */
+            /* animation-duration: 4s; */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-timing-function: linear; */
+
+            animation: animi1 4s linear infinite 2s alternate-reverse;
+        }
+
+        /* @keyframes animi1{
+            from{
+                left: 0px;
+            }
+            to{
+                left:500px;
+            }
+        } */
+
+        @keyframes animi1{
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: 500px;
+                top: 0;
+                background: lightcoral;
+            }
+            50%{
+                left: 500px;
+                top: 500px;
+                background: lightgreen;
+            }
+            75%{
+                left: 0;
+                top: 500px;
+                background: lightseagreen;
+            }
+            100%{
+                left: 0;
+                top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="animi">
+        
+    </div>
+</body>
+</html>
