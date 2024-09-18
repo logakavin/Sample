@@ -1,5 +1,6 @@
 import "./App.css";
-import CounterApp from "./components/Redux/CounterApp";
+import Mainattandance from "./components/Attandance.jsx/Mainattandance";
+// import CounterApp from "./components/Redux/CounterApp";
 // import CustomHook from "./components/Hooks/CustomHook";
 // import UseCallBackHook from "./components/Hooks/UseCallBackHook";
 // import Card from "./components/Task/Card";
@@ -53,8 +54,8 @@ function App() {
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
       {/* <Card /> */}
-      
-      <CounterApp />
+      <Mainattandance />
+      {/* <CounterApp /> */}
       {/* <UseMemoHook /> */}
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
