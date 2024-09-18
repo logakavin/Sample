@@ -1,5 +1,11 @@
 import "./App.css";
-import Mainattandance from "./components/Attandance.jsx/Mainattandance";
+
+import React,{ useState} from "react";
+import StudentList from "./components/Attandance/StudentList"
+import AttendanceForm from "./components/Attandance/AttendanceForm";
+import AttendanceReport from "./components/Attandance/AttendanceReport";
+
+
 // import CounterApp from "./components/Redux/CounterApp";
 // import CustomHook from "./components/Hooks/CustomHook";
 // import UseCallBackHook from "./components/Hooks/UseCallBackHook";
@@ -22,12 +28,31 @@ import Mainattandance from "./components/Attandance.jsx/Mainattandance";
 // import UseStateHook from './components/Hooks/UseStateHook';
 
 function App() {
+
+  const [students, setStudents] = useState([
+    { id: 1, name: "Loga", attendance: null },
+    { id: 2, name: "Kavin", attendance: null },
+    { id: 3, name: "Akil", attendance: null }
+  ]);
+
+  const markAttendance = (id, status) => {
+    setStudents(students.map(student =>
+      student.id === id ? { ...student, attendance: status } : student
+    ));
+  };
+
+
   return (
     <div className="App">
       <header className="App-header">
         <div>
           {/* <Link to={'Gmaila'} >Gmail</Link> */}
           {/* <Link to={'Password'} >Password</Link> */}
+          <h1>Student Attendance System</h1>
+      <StudentList students={students} />
+<AttendanceForm students={students} markAttendance={markAttendance} />
+<AttendanceReport students={students} />
+
         </div>
       </header>
 
@@ -53,14 +78,14 @@ function App() {
       {/* <UseReducerHook /> */}
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
-      {/* <Card /> */}
-      <Mainattandance />
+       {/* <Card />  */}
+       {/* <MainAttendance /> */}
       {/* <CounterApp /> */}
       {/* <UseMemoHook /> */}
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
       {/* <Register/> */}
-    
+
     </div>
 );
 }  

@@ -1,3 +1,4 @@
+import React from "react";
 function AttendanceForm({ students, markAttendance }) {
     const handleAttendance = (id, status) => {
       markAttendance(id, status);
