@@ -1,5 +1,5 @@
 import "./App.css";
-// import CounterApp from "./components/Redux/CounterApp";
+import CounterApp from "./components/Redux/CounterApp";
 // import CustomHook from "./components/Hooks/CustomHook";
 // import UseCallBackHook from "./components/Hooks/UseCallBackHook";
 // import Card from "./components/Task/Card";
@@ -12,7 +12,7 @@ import "./App.css";
 // import Inbox from './components/Gmail/Inbox';
 // import UseStateHook from './components/Hooks/UseStateHook';
 // import Certificate1 from "./components/Certificate/Certificate1";
-import Register from "./components/axios/Register";
+// import Register from "./components/axios/Register";
 // import UseEffectHook from "./components/Hooks/UseEffectHook";
 // import UseReducerHook from "./components/Hooks/UseReducerHook";
 // import UseReducerHook1 from "./components/Hooks/UseReducerHook1";
@@ -53,12 +53,12 @@ function App() {
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
       {/* <Card /> */}
-      {/* <Mainattandance / > */}
-      {/* <CounterApp /> */}
+      
+      <CounterApp />
       {/* <UseMemoHook /> */}
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
-      <Register/>
+      {/* <Register/> */}
     
     </div>
 );
