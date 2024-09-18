@@ -53,55 +53,14 @@ function App() {
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
       <Card />
+      {/* <Mainattandance / > */}
       {/* <CounterApp /> */}
       {/* <UseMemoHook /> */}
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
       {/* <Register/> */}
+    
     </div>
-
-    // function App({ setIsAuthenticated }) {
-    //   const [username, setUsername] = 'logakavin';
-    //   const [password, setPassword] = '12345';
-
-    //   // const navigate = Navigate();
-
-    //  const correctUsername = 'logakavin';
-    // const correctPassword = '12345';
-    //    const handleLogin = (e) => {
-    //      e.preventDefault();
-
-    //     if (username === correctUsername && password === correctPassword) {
-    //       setIsAuthenticated(true);
-    //       Navigate('/components/Gmail/Password');
-    //     }
-    //   };
-
-    //   return (
-    //     <div className="login">
-    //       <h2>Login</h2>
-    //       <form onSubmit={handleLogin}>
-    //         <div>
-    //           <label>Username:</label>
-    //           <input
-    //             type="text"
-    //             value={"logakavin"}
-    //             onChange={(e) => setUsername(e.target.value)}
-    //           />
-    //         </div>
-    //         <div>
-    //           <label>Password:</label>
-    //           <input
-    //             type="password"
-    //             value={"12345"}
-    //             onChange={(e) => setPassword(e.target.value)}
-    //           />
-    //         </div>
-    //         <button type="submit">Login</button>
-    //       </form>
-
-    //     </div>
-  );
-}
-
+);
+}  
 export default App;

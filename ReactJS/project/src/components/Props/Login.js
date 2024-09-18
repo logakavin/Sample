@@ -14,42 +14,42 @@
 // import About1 from './components/DynamicRouting/About1';
 // import ParentProp from './components/Props/ParentProp';
 
-// function App() {
-//   return (
-//     <div className="App">
-//        <header className="App-header"> 
-// {/* //         <h1>Sample Heading in ReactJS</h1>  */}
+//  function App() {
+//    return (
+//      <div className="App">
+//         <header className="App-header"> 
+  
 //           <div>
-//            <Link to={'home'} >Home</Link>
-//          <Link to={'about'} >About</Link>
-//          <Link to={'contact'} >Contact</Link>
-//           <Link to={'profile'} >Profile</Link>  
+//             <Link to={'home'} >Home</Link>
+//           <Link to={'about'} >About</Link>
+//           <Link to={'contact'} >Contact</Link>
+//            <Link to={'profile'} >Profile</Link>  
 
 
           
-//         </div> 
-//        </header> 
-//        {/* <Home />  */}
+//          </div> 
+//         </header> 
+//         {/* <Home />  */}
 
 //       <Routes>
-//         <Route path='' element={<Navigate to={'home'}/>}/>
-//         <Route path='/home' Component={Home}>
-//           <Route path='home1' Component={Home1}/>
-//           <Route path='contact1' Component={Contact1}/>
+//          <Route path='' element={<Navigate to={'home'}/>}/>       
+//            <Route path='/home' Component={Home}>
+//            <Route path='home1' Component={Home1}/>
+//            <Route path='contact1' Component={Contact1}/>
        
-//           <Route path='about1' Component={About1}/>
-//         </Route>
-//         <Route path='/home' element={<Navigate to={"/home/home1"}/>}/>
+//            <Route path='about1' Component={About1}/>
+//          </Route>
+//          <Route path='/home' element={<Navigate to={"/home/home1"}/>}/>
 
-//         <Route path='about' Component={About}/>
+//          <Route path='about' Component={About}/>
 //         <Route path='contact' Component={Contact}/>
-//         <Route path='profile' Component={Profile}/>
-//         <Route path='*' Component={ErrorPage}/>
+//          <Route path='profile' Component={Profile}/>
+//          <Route path='*' Component={ErrorPage}/>
        
         
         
       
-//       </Routes>
+//        </Routes>
 
 //       {/* < Props> */}
 //       {/* <ParentProp />/ */}

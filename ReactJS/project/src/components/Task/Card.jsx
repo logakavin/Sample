@@ -18,16 +18,13 @@ export default function Card() {
     const addCar = useCallback(() => {
         setCar((t) => [...t,  <p className='p1'>
             <h1>Product 1</h1>
-          </p>,
+            </p>,
+ <p className='p2'>
+    <h1>Product 2</h1>
+  </p>
+    ]);
+}, car);
 
-//  <p className='p2'>
-//             <h1>Product 2</h1>
-//           </p>
-
-         
-]);
-      }, car);
-    
       const Car = ({ Car, addCar }) => {
         console.log("child render");
         return (
