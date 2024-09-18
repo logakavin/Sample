@@ -25,7 +25,53 @@ export default function Register() {
         setViews(res.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [views]);
+
+  //setup edit
+  const [edit,setEdit] = useState(false);
+  function setupEdit(id){
+    localStorage.setItem("_id",id);
+    axios
+      .get(`${API}/${id}`)   
+      .then((res) => {
+          setname(res.data.Name);
+          setemail(res.data.Email);
+          setage(res.data.Age);
+
+          setEdit(true);
+      })
+      .catch((err) => console.log(err));
+  }
+
+  //update
+  function handleupdate(){
+    const id = localStorage.getItem("_id");
+    axios
+      .put(`${API}/${id}`,{
+        Name: name,
+        Age: age,
+        Email: email,
+      })   
+      .then(() => {
+          setname("");
+          setemail("");
+          setage("");
+
+          setEdit(false);
+          localStorage.clear()
+      })
+      .catch((err) => console.log(err));
+  }
+
+  //delete
+
+  function handleDelete(id){
+    axios.delete(`${API}/${id}`)
+    .then(()=>{
+      alert("data deleted")
+    })
+    .catch(err=>{console.log(err);})
+  }
 
   return (
     <div>
@@ -47,7 +93,17 @@ export default function Register() {
         value={email}
         onChange={(e) => setemail(e.target.value)}
       />
-      <button onClick={Send}>send</button>
+      <button onClick={
+        edit?
+        handleupdate:
+        Send
+      }>
+        {
+          edit ? 
+          "Update" :
+          "Create"
+        }
+      </button>
 
       <table>
         <thead>
@@ -55,6 +111,7 @@ export default function Register() {
             <th>Name</th>
             <th>Email</th>
             <th>Age</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -65,6 +122,16 @@ export default function Register() {
                   <td>{item.Name}</td>
                   <td>{item.Email}</td>
                   <td>{item.Age}</td>
+                  <td>
+                    <button onClick={()=>{
+                      setupEdit(item.id);
+                    }}>Edit</button>
+                    <button
+                      onClick={()=>{
+                        handleDelete(item.id);
+                      }}
+                    >Delete</button>
+                  </td>
                 </tr>
               )
             })
