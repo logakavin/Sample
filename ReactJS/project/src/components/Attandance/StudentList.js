@@ -1,15 +1,15 @@
 import React from "react";
-function StudentList({ students }) {
+export function StudentList({ students }) {
     return (
       <div>
-        <h2>Students</h2>
+        <h2 className="s">Students List</h2>
         <ul>
           {students.map(student => (
-            <li key={student.id}>{student.name}</li>
+            <li className="List" key={student.id}>{student.name}</li>
           ))}
         </ul>
-      </div>
+      </div> 
     );
   }
   
-  export default StudentList;
+  

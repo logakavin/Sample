@@ -1,0 +1,44 @@
+body{
+    background-image: url(https://media.istockphoto.com/id/1320494351/vector/vector-3d-sphere-globe-earth-grid-vertical-lines-latitude-icon.jpg?s=612x612&w=0&k=20&c=EBWTtsQnfxExZBP_S7G9IUYVx-dILgtOi11nXdpL5QI=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+.head{
+    color: red;
+}
+.s{
+    color:aqua;
+}
+.List{
+    list-style: none;
+    color: rgb(227, 225, 235);
+    padding: 8px;
+}
+.stn{
+    display: flex;
+    margin-left: 500px;
+    /* margin-top: 2px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+.btnp{
+    background-color: green;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 9px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.btna{
+    background-color: red;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 9px;
+    margin-left: 20px;
+    /* display: flex; */
+    
+}
