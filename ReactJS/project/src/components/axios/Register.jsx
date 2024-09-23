@@ -93,11 +93,8 @@ export default function Register() {
         value={email}
         onChange={(e) => setemail(e.target.value)}
       />
-      <button onClick={
-        edit?
-        handleupdate:
-        Send
-      }>
+       <button>onClick{}
+        
         {
           edit ? 
           "Update" :

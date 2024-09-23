@@ -3,9 +3,11 @@ import { StudentList } from './StudentList';
 import { AttendanceForm } from './AttendanceForm';
 import { AttendanceReport } from './AttendanceReport';
 import "./Attendance.css";
+import axios from 'axios';
 
 
 export default function MainAttendance() {
+  const API = "https://66c57672134eb8f434946316.mockapi.io/api"
     const [students, setStudents] = useState([
         { id: 1, name: "Loga", attendance: null },
         { id: 2, name: "Kavin", attendance: null },
@@ -14,8 +16,26 @@ export default function MainAttendance() {
         { id: 5, name: "Ajith", attendance:null},
         { id: 6, name: "Vijay", attendance:null},
         { id: 7, name: "Ram", attendance:null},
-    
       ]);
+      
+     
+      const saveAttendanceToAPI = async (id, status) => {
+        try {
+          const response = await fetch('https://66c57672134eb8f434946316.mockapi.io/api', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ studentId: id, attendance: status }),
+          });
+          const data = await response.json();
+          console.log('Attendance saved successfully:', data);
+        } catch (error) {
+          console.error('Error saving attendance:',error);
+      }
+      };
+  
+
       const [filter, setFilter] = useState("All");
 
     
@@ -53,6 +73,10 @@ export default function MainAttendance() {
         <button onClick={() => setFilter("Present")}>Show Present</button>
         <button onClick={() => setFilter("Absent")}>Show Absent</button>
      
+
+     
+
+  
      </div>
      
      
