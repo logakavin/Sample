@@ -93,8 +93,8 @@ export default function Register() {
         value={email}
         onChange={(e) => setemail(e.target.value)}
       />
-       <button>onClick{}
-        
+      
+       <button > 
         {
           edit ? 
           "Update" :

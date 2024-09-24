@@ -3,7 +3,7 @@ import { StudentList } from './StudentList';
 import { AttendanceForm } from './AttendanceForm';
 import { AttendanceReport } from './AttendanceReport';
 import "./Attendance.css";
-import axios from 'axios';
+// import axios from 'axios';
 
 
 export default function MainAttendance() {
@@ -19,7 +19,7 @@ export default function MainAttendance() {
       ]);
       
      
-      const saveAttendanceToAPI = async (id, status) => {
+      const SaveAttendanceInApi = async (id, status) => {
         try {
           const response = await fetch('https://66c57672134eb8f434946316.mockapi.io/api', {
             method: 'POST',
@@ -70,23 +70,11 @@ export default function MainAttendance() {
 
 <div>
   <button onClick={() => setFilter("All")}>Show All</button>
-        <button onClick={() => setFilter("Present")}>Show Present</button>
-        <button onClick={() => setFilter("Absent")}>Show Absent</button>
-     
-
-     
-
-  
+  <button onClick={() => setFilter("Present")}>Show Present</button>
+  <button onClick={() => setFilter("Absent")}>Show Absent</button>
+    
      </div>
-     
-     
+    
       </div>
-
-
-
-
-
-      
-
 )
 }
