@@ -60,6 +60,7 @@ export default function MainAttendance() {
         
         <form>
           <label htmlFor="text">Date</label>
+
           <input type="date" name="" id=""></input>
         </form>
         
@@ -74,7 +75,6 @@ export default function MainAttendance() {
   <button onClick={() => setFilter("Absent")}>Show Absent</button>
     
      </div>
-    
-      </div>
+     </div>
 )
 }
