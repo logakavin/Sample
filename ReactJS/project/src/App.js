@@ -1,5 +1,6 @@
 import "./App.css";
 import MainAttendance from "./components/Attandance/MainAttendance";
+// import Port1 from "./components/Portfolio/Port1";
 // import React,{ useState} from "react";
 // import StudentList from "./components/Attandance/StudentList"
 // import AttendanceForm from "./components/Attandance/AttendanceForm";
@@ -91,6 +92,7 @@ function App() {
         {/* <CustomHook /> */}
       {/* <Register/> */}
       <MainAttendance/>
+      {/* <Port1 /> */}
 
     </div>
 );

@@ -1,7 +1,9 @@
 body{
     background-image: url(https://media.istockphoto.com/id/1320494351/vector/vector-3d-sphere-globe-earth-grid-vertical-lines-latitude-icon.jpg?s=612x612&w=0&k=20&c=EBWTtsQnfxExZBP_S7G9IUYVx-dILgtOi11nXdpL5QI=);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
     color: aliceblue;
 }
 .head{
