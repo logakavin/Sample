@@ -19,10 +19,10 @@ root.render(
   
    <React.StrictMode>
     <Provider store={store}>
-     <BrowserRouter>
-      <App />
-   </BrowserRouter> 
+   <BrowserRouter>
+   </BrowserRouter>
     </Provider>
+    
 
   </React.StrictMode>
 );

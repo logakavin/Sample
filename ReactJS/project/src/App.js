@@ -1,5 +1,5 @@
 import "./App.css";
-import MainAttendance from "./components/Attandance/MainAttendance";
+// import MainAttendance from "./components/Attandance/MainAttendance";
 // import Port1 from "./components/Portfolio/Port1";
 // import React,{ useState} from "react";
 // import StudentList from "./components/Attandance/StudentList"
@@ -21,7 +21,7 @@ import MainAttendance from "./components/Attandance/MainAttendance";
 // import UseStateHook from './components/Hooks/UseStateHook';
 // import Certificate1 from "./components/Certificate/Certificate1";
 // import Register from "./components/axios/Register";
-// import UseEffectHook from "./components/Hooks/UseEffectHook";
+import UseEffectHook from "./components/Hooks/UseEffectHook";
 // import UseReducerHook from "./components/Hooks/UseReducerHook";
 // import UseReducerHook1 from "./components/Hooks/UseReducerHook1";
 // import UseRefHook from './components/Hooks/UseRefHook';
@@ -80,7 +80,7 @@ function App() {
       {/* <UseRefHook /> */}
       {/* <UseStateHook /> */}
       {/* <Usecontexthook></Usecontexthook> */}
-      {/* <UseEffectHook /> */}
+      <UseEffectHook />
       {/* <UseReducerHook /> */}
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
@@ -91,7 +91,7 @@ function App() {
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
       {/* <Register/> */}
-      <MainAttendance/>
+      {/* <MainAttendance/> */}
       {/* <Port1 /> */}
 
     </div>

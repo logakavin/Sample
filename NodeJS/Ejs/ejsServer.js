@@ -15,7 +15,6 @@ server.post('/ejs',function(req,res){
 res.redirect('/ejs');
 })
 
-
 server.listen(4444,()=>{
     console.log('ejs is running');
     
