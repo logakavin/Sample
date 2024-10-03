@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(238, 237, 245);
+    /* color: white; */
+    background-image: url("https://img.freepik.com/premium-photo/taxi-car-street-night-luminous-taxi-sign-bokeh-background-taxi-sign-roof-car_1199132-233038.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    height: 60px;
+    width: 100%;
+    color: red;
+    border: 3px solid rgb(19, 18, 18);
+    border-radius: 10px;
+}
+.list{
+    color: rgb(38, 0, 255);
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.list :hover{
+    opacity: 1;
+    color: red;
+}
+.head{
+    color: red;
+    margin-right: 40px;
+    font-size: 30px;
+ 
+}
+.head :hover{
+    opacity: 1;
+    color:rgb(42, 196, 55);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.para{
+    margin-top:200px;
+    margin-right: 50px;
+    color: violet;
+    font-size: 50px;
+}
+.r{
+    color: rgb(40, 173, 140);
+    font-size: 80px;
+}
+.img1{
+    border-radius: 40px;
+    
+    margin-left: 90px;
+}
+.ph{
+    color: rgb(194, 35, 35);
+    margin-left: 50px;
+}
+.call{
+    color: rgb(194, 35, 35);
+    margin-left: 20px;
+}
+
+.a{
+    color: antiquewhite;
+}

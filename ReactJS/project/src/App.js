@@ -21,8 +21,8 @@ import "./App.css";
 // import UseStateHook from './components/Hooks/UseStateHook';
 // import Certificate1 from "./components/Certificate/Certificate1";
 // import Register from "./components/axios/Register";
-import UseEffectHook from "./components/Hooks/UseEffectHook";
-// import UseReducerHook from "./components/Hooks/UseReducerHook";
+// import UseEffectHook from "./components/Hooks/UseEffectHook";
+import UseReducerHook from "./components/Hooks/UseReducerHook";
 // import UseReducerHook1 from "./components/Hooks/UseReducerHook1";
 // import UseRefHook from './components/Hooks/UseRefHook';
 // import Usecontexthook from './components/Hooks/Usecontexthook';
@@ -80,8 +80,8 @@ function App() {
       {/* <UseRefHook /> */}
       {/* <UseStateHook /> */}
       {/* <Usecontexthook></Usecontexthook> */}
-      <UseEffectHook />
-      {/* <UseReducerHook /> */}
+      {/* <UseEffectHook /> */}
+      <UseReducerHook />
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
        {/* <Card />  */}
