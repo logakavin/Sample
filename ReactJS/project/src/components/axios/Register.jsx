@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Register() {
-  const API = "https://66c57672134eb8f434946316.mockapi.io/api";
+  const API = "https://mockapi.io/projects/66c57672134eb8f434946316";
   const [name, setname] = useState("");
   const [age, setage] = useState("");
   const [email, setemail] = useState("");

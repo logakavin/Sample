@@ -1,19 +1,30 @@
 body{
     background-color: rgb(238, 237, 245);
     /* color: white; */
-    background-image: url("https://img.freepik.com/premium-photo/taxi-car-street-night-luminous-taxi-sign-bokeh-background-taxi-sign-roof-car_1199132-233038.jpg");
+    /* background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/87/ba/3a/caption.jpg?w=1200&h=1200&s=1"); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    position: relative;
+    
+}
+.main2{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar{
     height: 60px;
     width: 100%;
-    color: red;
-    border: 3px solid rgb(19, 18, 18);
+    background-color: aliceblue;
+    color: rgb(247, 231, 231);
+    border: 1px solid rgb(19, 18, 18);
     border-radius: 10px;
+    /* border: none; */
+    margin: 0px;
 }
 .list{
-    color: rgb(38, 0, 255);
+    color: rgb(184, 168, 162);
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -55,6 +66,7 @@ body{
     
     margin-left: 90px;
 }
+
 .ph{
     color: rgb(194, 35, 35);
     margin-left: 50px;
@@ -64,6 +76,88 @@ body{
     margin-left: 20px;
 }
 
-.a{
-    color: antiquewhite;
+.content{
+    position: relative;
+}
+.list{
+    position: relative;
+}
+.about{
+    color: red;
+} 
+
+/* booking */
+
+.bh{
+    height: 600px;
+    width: 100%;
+/* background-color: red; */
+background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230621/pngtree-vibrant-3d-yellow-taxi-symbol-with-map-pointer-convenient-app-for-image_3650810.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.b{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.boo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+
+}  
+.inpb{
+    height:40px;
+    width:300px;
+    border: none;
+    border-radius: 20px;
+}
+.btnb{
+    height: 40px;
+    width: 190px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(27, 201, 105);
+    color: white;  
+}
+.bb2{
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bl{
+    color: white;
+}
+
+
+/* About */
+.ama{
+    margin: 70px;
+    margin-top: 10px;
+}
+.ahp{
+    color: rgb(65, 56, 56);
+    font-size: medium;
+    margin: 20px;
+}
+
+.ah{
+    color: red;
+    margin-left: 0px;
+}
+.ah5{
+color: red;
+margin-left: 20px;
+}
+.aimg1{
+    border-radius: 50%;
+}
+.aimg{
+    display: flex;
 }

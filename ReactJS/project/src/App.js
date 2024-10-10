@@ -1,4 +1,5 @@
 import "./App.css";
+import FileUploadForm from "./components/FileUploadForm";
 // import MainAttendance from "./components/Attandance/MainAttendance";
 // import Port1 from "./components/Portfolio/Port1";
 // import React,{ useState} from "react";
@@ -22,11 +23,15 @@ import "./App.css";
 // import Certificate1 from "./components/Certificate/Certificate1";
 // import Register from "./components/axios/Register";
 // import UseEffectHook from "./components/Hooks/UseEffectHook";
-import UseReducerHook from "./components/Hooks/UseReducerHook";
+// import UseReducerHook from "./components/Hooks/UseReducerHook";
 // import UseReducerHook1 from "./components/Hooks/UseReducerHook1";
 // import UseRefHook from './components/Hooks/UseRefHook';
 // import Usecontexthook from './components/Hooks/Usecontexthook';
 // import UseStateHook from './components/Hooks/UseStateHook';
+import Form from "./components/Form";
+
+// import Carosel from "./components/Carosel";
+
 
 function App() {
 
@@ -81,7 +86,7 @@ function App() {
       {/* <UseStateHook /> */}
       {/* <Usecontexthook></Usecontexthook> */}
       {/* <UseEffectHook /> */}
-      <UseReducerHook />
+      {/* <UseReducerHook /> */}
       {/* <UseReducerHook1/> */}
       {/* <UseCallBackHook /> */}
        {/* <Card />  */}
@@ -90,9 +95,12 @@ function App() {
       {/* <UseMemoHook /> */}
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
-      {/* <Register/> */}
+       {/* <Register/>  */}
       {/* <MainAttendance/> */}
       {/* <Port1 /> */}
+{/* <Form/> */}
+<FileUploadForm/>
+{/* <Carosel/> */}
 
     </div>
 );
