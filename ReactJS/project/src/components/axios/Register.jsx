@@ -93,7 +93,7 @@ export default function Register() {
         value={email}
         onChange={(e) => setemail(e.target.value)}
       />
-      
+      <button onClick={Send}>send</button>
        <button > 
         {
           edit ? 
@@ -128,6 +128,15 @@ export default function Register() {
                         handleDelete(item.id);
                       }}
                     >Delete</button>
+
+
+                    <button onClick={()=>{
+                      handleupdate(item.id);
+                    }}>Update</button>
+
+
+        
+
                   </td>
                 </tr>
               )

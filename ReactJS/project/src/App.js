@@ -14,6 +14,7 @@ import FileUploadForm from "./components/FileUploadForm";
 // import Card from "./components/Task/Card";
 // import UseMemoHook from "./components/Hooks/UseMemoHook";
 // import { Navigate, Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 // import Gmaila from './components/Gmail/Gmaila';
 // import Password from './components/Gmail/Password';
@@ -28,57 +29,25 @@ import FileUploadForm from "./components/FileUploadForm";
 // import UseRefHook from './components/Hooks/UseRefHook';
 // import Usecontexthook from './components/Hooks/Usecontexthook';
 // import UseStateHook from './components/Hooks/UseStateHook';
-import Form from "./components/Form";
+// import Form from "./components/Form";
 
-// import Carosel from "./components/Carosel";
+import Carosel from "./components/Carosel";
 
 
 function App() {
 
-  // const [students, setStudents] = useState([
-  //   { id: 1, name: "Loga", attendance: null },
-  //   { id: 2, name: "Kavin", attendance: null },
-  //   { id: 3, name: "Akil", attendance: null },
-  //   { id: 4, name: "Gowtham", attendance:null},
-  //   { id: 5, name: "Ajith", attendance:null},
-  //   { id: 6, name: "Vijay", attendance:null},
-  //   { id: 7, name: "Ram", attendance:null},
-
-  // ]);
-
-  // const markAttendance = (id, status) => {
-  //   setStudents(students.map(student =>
-  //     student.id === id ? { ...student, attendance: status } : student
-  //   ));
-  // };
-
+  
 
   return (
     <div className="App">
       <header className="App-header">
         <div>
-          {/* <Link to={'Gmaila'} >Gmail</Link> */}
-          {/* <Link to={'Password'} >Password</Link> */}
-{/* <h1 className="head">Student Attendance </h1>
-      <StudentList students={students} />
-<AttendanceForm students={students} markAttendance={markAttendance} />
-<AttendanceReport students={students} />
-           */}
+         
+           
         </div>
       </header>
 
-      {/* <Routes>
-        <Route path='' element={<Navigate to={'Gmaila'}/>}/>
-        <Route path='Gmaila' Component={Gmaila}>
-       
-          <Route path='Password' Component={Password}/>
-          <Route path='Sidebar' Component={Sidebar}/> 
-         <Route path='Inbox' Component={Inbox}/>
-        </Route>
-        
-        <Route path='gmaila' Component={Gmaila}/>
-        <Route path='Password' Component={Password}/>
-      </Routes> */}
+
 
       {/* Hooks */}
       {/* <UseStateHook /> */}
@@ -95,13 +64,16 @@ function App() {
       {/* <UseMemoHook /> */}
       {/* <Certificate1/> */}
         {/* <CustomHook /> */}
-       {/* <Register/>  */}
+       {/*<Register/>*/}
       {/* <MainAttendance/> */}
       {/* <Port1 /> */}
 {/* <Form/> */}
-<FileUploadForm/>
+{/* <FileUploadForm/> */}
 {/* <Carosel/> */}
-
+        <Routes>
+          <Route path="/" element={<FileUploadForm/>}/>
+          <Route path="/home" element={<Carosel/>}/>
+        </Routes>
     </div>
 );
 }  

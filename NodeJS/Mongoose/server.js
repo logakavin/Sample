@@ -9,7 +9,7 @@ const cors = require('cors');
 const UserAPI = require('./API/UserAPI');
 const FileAPI = require('./API/FileAPI');
 
-app.use(cors({origin:'http://localhost:3000'}))
+app.use(cors({origin:process.env.CORS}))
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 

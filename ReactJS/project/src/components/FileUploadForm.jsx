@@ -18,7 +18,7 @@ export default function FileUploadForm() {
     function HandleAddPhoto(e) {
         e.preventDefault();
 
-        axios.post('http://localhost:2300/file/postfile', formData, {
+        axios.post('https://mongoose-s881.onrender.com/postfile', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -32,7 +32,7 @@ export default function FileUploadForm() {
     // to get banner image
     const [imgdata, setImgdata] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:2300/file/getfile')
+        axios.get('https://mongoose-s881.onrender.com/file/getfile')
             .then((res) => {
                 setImgdata(res.data)
             })
@@ -45,11 +45,11 @@ export default function FileUploadForm() {
     function setUpdate(id) {
         setupdateId(id)
         console.log(updateId);
-        axios.get('http://localhost:2300/file/getfile/' + id)
+        axios.get('https://mongoose-s881.onrender.com/getfile/' + id)
             .then(res => {
                 setTitle(res.data.title)
                 setSublines(res.data.sublines)
-                refFile.current.files[0] = `http://localhost:2300/upload/${res.data.BannerImage}`
+                refFile.current.files[0] = `https://mongoose-s881.onrender.com/upload/${res.data.BannerImage}`
 
                 console.log(refFile.current);
             })
@@ -60,7 +60,7 @@ export default function FileUploadForm() {
     // to update Banner
     function HandleUpdate(e) {
         e.preventDefault();
-        axios.put(`http://localhost:2300/updatefile/${updateId}`,formData)
+        axios.put(`https://mongoose-s881.onrender.com/updatefile/${updateId}`,formData)
             .then(() => {
                 console.log('Updated');
                 window.location.reload()
@@ -70,7 +70,7 @@ export default function FileUploadForm() {
 
     //  to delete an Banner
     function HandleDelete(id) {
-        axios.delete('http://localhost:2300/file/deletefile/' + id)
+        axios.delete('https://mongoose-s881.onrender.com/file/deletefile/' + id)
             .then(()=>{
                 window.location.reload();
             })

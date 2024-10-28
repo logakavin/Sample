@@ -5,7 +5,13 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.na{
+    border-radius: 80%;
 }
 .main2{
     color: red;
@@ -13,22 +19,30 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.hlink{
+    text-decoration: none;
+    color:wheat;
+}
 .navbar{
-    height: 60px;
-    width: 100%;
-    background-color: aliceblue;
+    height: 90px;
+    width: 1200px;
+    background-color: rgb(1, 8, 15);
     color: rgb(247, 231, 231);
-    border: 1px solid rgb(19, 18, 18);
-    border-radius: 10px;
+    border: 4px solid rgb(54, 22, 112);
+    border-radius: 30px;
     /* border: none; */
     margin: 0px;
+    
+
 }
 .list{
-    color: rgb(184, 168, 162);
+    color: rgb(236, 66, 24);
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
+
 
 }
 .list :hover{
@@ -86,22 +100,35 @@ body{
     color: red;
 } 
 
+
+
+
+
+
 /* booking */
+
+
+
+
 
 .bh{
     height: 600px;
     width: 100%;
-/* background-color: red; */
+  border: 2px solid black;
+  border-radius: 20px;  
 background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230621/pngtree-vibrant-3d-yellow-taxi-symbol-with-map-pointer-convenient-app-for-image_3650810.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+margin-top: 5px;
+
 }
+
 .b{
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 9px;
 }
 .boo{
     display: flex;
@@ -115,6 +142,7 @@ background-size: cover;
     width:300px;
     border: none;
     border-radius: 20px;
+    margin: 10px;
 }
 .btnb{
     height: 40px;
@@ -136,10 +164,20 @@ background-size: cover;
 }
 
 
+
+
+
 /* About */
+
+
+
 .ama{
-    margin: 70px;
+    
+    
+    
     margin-top: 10px;
+     
+   
 }
 .ahp{
     color: rgb(65, 56, 56);
@@ -149,7 +187,10 @@ background-size: cover;
 
 .ah{
     color: red;
-    margin-left: 0px;
+    margin-left: 20px;   
+}
+.ahp{
+color: aliceblue;
 }
 .ah5{
 color: red;
@@ -157,7 +198,108 @@ margin-left: 20px;
 }
 .aimg1{
     border-radius: 50%;
+margin-left: 20px;
 }
 .aimg{
     display: flex;
+}
+
+.amin{
+    background-image:url("https://img.freepik.com/free-vector/dark-circular-halftone-background_1017-2996.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 1220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 1px solid black;
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+
+
+/* Contact */
+
+
+
+.cl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+.con{
+    color: green;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.cbg{
+    
+    background-image:url("https://t4.ftcdn.net/jpg/03/37/96/33/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border: 1px solid black;
+  border: none;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+.cbor{
+    border-radius: 30px;
+}
+
+
+
+
+/* Help */
+
+
+
+
+.sbgi{
+    background-image: url('https://t4.ftcdn.net/jpg/05/08/16/91/360_F_508169158_fLChoCLWuNqNs8NpBLASbwuZHZXqSsen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sh{
+    color: blanchedalmond;
+}   
+
+.hp{
+    color: yellow;
+}
+.hinp{
+    height: 150px;
+    width: 300px;
+    border: 1px solid black;
+    border: none;
+    border-radius: 20px;
+}
+.hbtn{
+    height: 50px;
+    width: 100px;
+    background-color: aquamarine;
+    color: black;
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+
+
 }
