@@ -144,6 +144,15 @@ margin-top: 5px;
     border-radius: 20px;
     margin: 10px;
 }
+
+.inpbd{
+    height:40px;
+    width:300px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    
+}
 .btnb{
     height: 40px;
     width: 190px;
@@ -151,6 +160,10 @@ margin-top: 5px;
     border-radius: 20px;
     background-color: rgb(27, 201, 105);
     color: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
 }
 .bb2{
     margin-top: 100px;
@@ -166,19 +179,15 @@ margin-top: 5px;
 
 
 
-
 /* About */
 
 
 
-.ama{
-    
-    
-    
+.ama{   
     margin-top: 10px;
      
-   
 }
+
 .ahp{
     color: rgb(65, 56, 56);
     font-size: medium;
