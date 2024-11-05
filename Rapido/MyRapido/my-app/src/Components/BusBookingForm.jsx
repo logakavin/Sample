@@ -32,7 +32,7 @@ const BusBookingForm = () => {
     // Display booking details if all inputs are valid
     alert (`Booking confirmed from ${departure} to ${destination} on ${date} for ${passengers} passenger(s).`);
   };
-  
+
 
   return (
 //  <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
@@ -132,13 +132,13 @@ className="inpb"
            />
          </div>
 
-  <button className="btnb" type="submit">Book Bus</button>
+  <button className="btnb" type="submit">Book Cab</button>
 </form>
 
 
 </div>
 <div className='bb2'>
-<h1>NOW, GET MORE THAN JUST  TICKETS WITH US!</h1>
+<h1>NOW, GET MORE THAN JUST TICKETS WITH US!</h1>
 
 
 
