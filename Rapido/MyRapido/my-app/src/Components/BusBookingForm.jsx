@@ -8,9 +8,18 @@ const BusBookingForm = () => {
 
   // Valid locations for validation
   const validLocations = ['Coimbatore', 'Chennai', 'Bangalore'];
+  const validpassengers=['1','2','3'];
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    
+    
+if(!validpassengers.includes(passengers)){
+  alert('Only 4 Passengers can Available')
+  return;
+}
+
 
     // Validation for empty fields
     if (!departure || !destination || !date || passengers < 1) {
