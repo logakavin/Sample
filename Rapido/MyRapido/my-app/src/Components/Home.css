@@ -109,8 +109,6 @@ body{
 
 
 
-
-
 .bh{
     height: 600px;
     width: 100%;
@@ -123,6 +121,11 @@ margin-top: 5px;
 
 }
 
+.bi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .b{
     color: white;
     display: flex;
