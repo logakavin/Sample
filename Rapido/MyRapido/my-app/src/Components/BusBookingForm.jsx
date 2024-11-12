@@ -9,23 +9,31 @@ const BusBookingForm = () => {
   // Valid locations for validation
   const validLocations = ['Coimbatore', 'Chennai', 'Bangalore'];
   const validpassengers=['1','2','3','4'];
+  const Price=  passengers * 2000;
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+  
     
-    
+    if (!validpassengers.includes(passengers)){
+
+      alert("Price ="+ Price)
+    }
+
+
 if(!validpassengers.includes(passengers)){
   alert('Only 4 Passengers can Available')
   return;
 }
-
 
     // Validation for empty fields
     if (!departure || !destination || !date || passengers < 1) {
       alert('All fields are required, and passengers must be at least 1.');
       return;
     }
+    
 
     // Check if departure and destination are in valid locations
     if (!validLocations.includes(departure)) {
@@ -38,9 +46,10 @@ if(!validpassengers.includes(passengers)){
       return;
     }
 
+
     // Display booking details if all inputs are valid
-    alert (`Booking confirmed from ${departure} to ${destination} on ${date} for ${passengers} passenger(s).`);
-  };
+    alert (`Booking confirmed from ${departure} to ${destination} on ${date} for ${passengers}   passenger(s)  price ${Price} .`);
+  }; 
 
 
   return (
@@ -52,16 +61,17 @@ if(!validpassengers.includes(passengers)){
 <form onSubmit={handleSubmit}>
 <label className="bl" htmlFor="departure">Departure Location:</label>
 <input
-className="inpb"
+className="in"
   type="text"
   id="departure"
   value={departure}
   onChange={(e) => setDeparture(e.target.value)} 
   placeholder="Enter departure location"
 />
-<label className="bl" htmlFor="destination">Destination Location:</label>
+
+<label className="bldes" htmlFor="destination">Destination Location:</label>
   <input
-  className="inpb"
+  className="inpbd"
     type="text"
     id="destination"
     value={destination}
@@ -72,7 +82,7 @@ className="inpb"
 
 <div className='bi'>
 <div style={{ marginBottom: '10px' }}>
-           <label className='bl'>Date of Travelling On:</label>
+           <label className='bl'>Date of Travelling :</label>
            <input
            className='inpb'
              type="date"
@@ -83,7 +93,7 @@ className="inpb"
          </div>
 
 <div style={{ marginBottom: '10px' }}>
-           <label className='bl'>Number of Passengers:</label>
+           <label className='bldpe'>Number of Passengers:</label>
          <input
           placeholder='Number of Passengers'
           className='inpb'
@@ -100,8 +110,8 @@ className="inpb"
 
 </div>
 <div className='bb2'>
-<h1>NOW, GET MORE THAN JUST TICKETS WITH US!</h1>
 
+<h1>NOW, GET MORE THAN JUST TICKETS WITH US!</h1>
 
 
 </div>
